@@ -1,0 +1,22 @@
+.review {
+    .review__text {
+        align-items: flex-start;
+        padding: 16px 16px;
+        background-color: white;
+    }
+
+    .review__h {
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    .review__icon {
+        margin-right: 32px;
+    }
+
+    .review__p {
+        color: #78909c;
+        margin-top: 16px;
+        font-weight: normal;
+    }
+}

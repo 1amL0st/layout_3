@@ -1,5 +1,17 @@
 .services {
     margin-top: 96px;
-    background-color: red;
-    height: 100px;
+    padding-bottom: 64px;
+    
+    .drop-down {
+        max-width: 800px;
+    }
+
+    .services-list {
+        margin-top: 78px;
+        list-style-type: none;
+
+        li {
+            margin-bottom: 16px;
+        }
+    }
 }

@@ -8,10 +8,12 @@
         <title>Layout 3</title>
 
         <link rel="stylesheet" type="text/css" href="./style/css/style.css">
-        <script src="./script/index.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <script src="./script/script.js"></script>
     </head>
 
-    <body>
+    <body onload="OnLoadFunction()">
 
         <header class="header section">
             <div class="section__bg"></div>
@@ -116,7 +118,123 @@
         </section>
 
         <section id="section-services" class="services section">
-            
+            <div class="container">
+                <div class="wrapper column">
+                    <article class="article column">
+                        <h2 class="article__h">Services</h2>
+                        <p class="article__p">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt labore et dolore magna aliqua.</p>
+                    </article>
+
+                    <ul class="services-list column">
+                        <li><div class="drop-down">
+                            <header class="drop-down__header row--jcsb">
+                                <span class="drop-down__name row">
+                                    <span class="drop-down__icon fa fa-bar-chart"></span>
+                                    Statistics
+                                </span>
+                                <button class="btn--drop-down"></button>
+                            </header>
+                            <div class="drop-down__content row--jcsb">
+                                <img class="drop-down__image" alt="image" src="assets/images/servies/statistics.png">
+                                <p class="drop-down__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in </p>
+                            </div>
+                        </div></li>
+
+                        <li><div class="drop-down">
+                            <header class="drop-down__header row--jcsb">
+                                <span class="drop-down__name row">
+                                    <span class="drop-down__icon fa fa-inbox"></span>
+                                    Inbox
+                                </span>
+                                <button class="btn--drop-down"></button>
+                            </header>
+                            <div class="drop-down__content row--jcsb">
+                                <img class="drop-down__image" alt="image" src="assets/images/servies/statistics.png">
+                                <p class="drop-down__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in </p>
+                            </div>
+                        </div></li>
+
+                        <li><div class="drop-down">
+                            <header class="drop-down__header row--jcsb">
+                                <span class="drop-down__name row">
+                                    <span class="drop-down__icon fa fa-users"></span>
+                                    Team
+                                </span>
+                                <button class="btn--drop-down"></button>
+                            </header>
+                            <div class="drop-down__content row--jcsb">
+                                <img class="drop-down__image" alt="image" src="assets/images/servies/statistics.png">
+                                <p class="drop-down__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in </p>
+                            </div>
+                        </div></li>
+
+                        <li><div class="drop-down">
+                            <header class="drop-down__header row--jcsb">
+                                <span class="drop-down__name row">
+                                    <span class="drop-down__icon fa fa-cog"></span>
+                                    Settings
+                                </span>
+                                <button class="btn--drop-down"></button>
+                            </header>
+                            <div class="drop-down__content row--jcsb">
+                                <img class="drop-down__image" alt="image" src="assets/images/servies/statistics.png">
+                                <p class="drop-down__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in </p>
+                            </div>
+                        </div></li>
+
+                        <li><div class="drop-down">
+                            <header class="drop-down__header row--jcsb">
+                                <span class="drop-down__name row">
+                                    <span class="drop-down__icon fa fa-rss"></span>
+                                    Feed
+                                </span>
+                                <button class="btn--drop-down"></button>
+                            </header>
+                            <div class="drop-down__content row--jcsb">
+                                <img class="drop-down__image" alt="image" src="assets/images/servies/statistics.png">
+                                <p class="drop-down__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in </p>
+                            </div>
+                        </div></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="section reviews">
+            <div class="section__bg"></div>
+            <div class="container">
+                <div class="wrapper row--jcsb">
+                    <article class="article column">
+                        <h2 class="article__h">What our customers have to say about us.</h2>
+                        <p class="article__p">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamclaboris nisi ut aliquip ex ea commodo consequat.</p>
+                        <button class="btn--default">Get Started</button>
+                    </article>
+
+                    <div class="reviews-list column">
+                        <button class="btn fa fa-angle-up"></button>
+
+                        <ul class="view column">
+                            <li class="review row">
+                                <img class="review__icon" src="assets/images/reviews/1.png" alt="">
+                                <article class="review__text column">
+                                    <h3 class="review__h">Someone</h3>
+                                    <p class="review__p">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamclaboris nisi ut aliquip ex ea commodo consequat.</p>
+                                </article>
+                            </li>
+
+                            <li class="review row">
+                                <img class="review__icon" src="assets/images/reviews/2.png" alt="">
+                                <article class="review__text column">
+                                    <h3 class="review__h">Someone else</h3>
+                                    <p class="review__p">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamclaboris nisi ut aliquip ex ea commodo consequat.</p>
+                                </article>
+                            </li>
+                        </ul>
+
+                        <button class="btn fa fa-angle-down"></button>
+                    </div>
+                </div>
+            </div>
         </section>
 
     </body>

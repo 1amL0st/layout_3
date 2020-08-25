@@ -1,0 +1,55 @@
+.reviews {
+
+    .fa-angle-up, .fa-angle-down {
+        font-size: 32px;
+    }
+
+    .container {
+        padding: 32px 0;
+    }
+
+    .article {
+        align-items: flex-start;
+        text-align: left;
+    }
+
+    .article * {
+        color: white;
+    }
+
+    .article__p {
+        font-weight: 600;
+    }
+
+    .btn--default {
+        margin-top: 60px;
+        color: white;
+        background-color: #061e37;
+
+        &:focus, &:active {
+            background-color: white;
+            color: black;
+        }
+    }
+
+    .review {
+        max-width: 760px;
+        margin: 32px;
+    }
+
+    .reviews-list 
+    {
+        list-style-type: none;
+        .article__p {
+            color: $article-p-color;
+        }
+
+        .btn {
+            background-color: transparent;
+        }
+
+        .btn:hover {
+            cursor:grab;
+        }
+    }
+}

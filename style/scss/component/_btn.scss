@@ -20,7 +20,22 @@
         background-color: $btn-bg-color;
     }
 
-    &--sign-up:focus, &--default:focus {
+    &--drop-down {
+        @extend .btn;
+        background-image: url('../../assets/images/drop_down_btn_icon.png');
+        transform: rotate(180deg);
+        background-repeat: no-repeat;
+        background-position: center;
+        width: 32px;
+        height: 32px;
+        background-color: transparent;
+    }
+
+    &--drop-down:hover {
+        cursor: grab;
+    }
+
+    &:focus, &--sign-up:focus, &--default:focus, &--drop-down:focus {
         outline: none;
     }
 }

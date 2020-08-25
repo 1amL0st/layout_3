@@ -8,8 +8,11 @@
         './component/btn',
         './component/article',
         './component/item',
-        './component/stat';
+        './component/stat',
+        './component/drop-down',
+        './component/review';
 
 @import './layout/header',
         './layout/home',
-        './layout/services';
+        './layout/services',
+        './layout/reviews';

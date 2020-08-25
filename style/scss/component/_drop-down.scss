@@ -1,0 +1,31 @@
+.drop-down {
+    border-bottom: solid 2px black;
+    border-right: solid 2px black;
+}
+
+.drop-down__header {
+    padding: 16px 0;
+}
+
+.drop-down__icon {
+    margin-right: 16px;
+}
+
+.drop-down__name {
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.drop-down__text {
+    margin-left: 32px;
+}
+
+.drop-down__content {
+    max-height: 0px;
+    visibility: hidden;
+    
+    &.visible {
+        max-height: unset !important;
+        visibility: visible !important;
+    }
+}

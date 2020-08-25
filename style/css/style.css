@@ -82,7 +82,7 @@ h, h1, h2, h3, h4, h5, h6, p {
   max-width: 440px;
 }
 
-.btn, .btn--default, .btn--sign-up {
+.btn, .btn--drop-down, .btn--default, .btn--sign-up {
   border-radius: 5px;
   font-size: 15px;
   border: none;
@@ -100,12 +100,25 @@ h, h1, h2, h3, h4, h5, h6, p {
   height: 60px;
   background-color: #1de9b6;
 }
-.btn--sign-up:focus, .btn--default:focus {
+.btn--drop-down {
+  background-image: url("../../assets/images/drop_down_btn_icon.png");
+  transform: rotate(180deg);
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 32px;
+  height: 32px;
+  background-color: transparent;
+}
+.btn--drop-down:hover {
+  cursor: grab;
+}
+.btn:focus, .btn--sign-up:focus, .btn--default:focus, .btn--drop-down:focus {
   outline: none;
 }
 
 .article {
   text-align: center;
+  max-width: 570px;
 }
 
 .article__h {
@@ -161,15 +174,67 @@ h, h1, h2, h3, h4, h5, h6, p {
   font-weight: 800;
 }
 
+.drop-down {
+  border-bottom: solid 2px black;
+  border-right: solid 2px black;
+}
+
+.drop-down__header {
+  padding: 16px 0;
+}
+
+.drop-down__icon {
+  margin-right: 16px;
+}
+
+.drop-down__name {
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.drop-down__text {
+  margin-left: 32px;
+}
+
+.drop-down__content {
+  max-height: 0px;
+  visibility: hidden;
+}
+.drop-down__content.visible {
+  max-height: unset !important;
+  visibility: visible !important;
+}
+
+.review .review__text {
+  align-items: flex-start;
+  padding: 16px 16px;
+  background-color: white;
+}
+.review .review__h {
+  font-size: 18px;
+  font-weight: bold;
+}
+.review .review__icon {
+  margin-right: 32px;
+}
+.review .review__p {
+  color: #78909c;
+  margin-top: 16px;
+  font-weight: normal;
+}
+
 .header * {
   color: white;
 }
 .header .container {
   padding: 32px 0 190px 0;
 }
+.header .nav {
+  align-items: flex-end;
+}
 .header .content {
   align-items: flex-end;
-  margin-top: 64px;
+  margin-top: 173px;
 }
 .header .link:hover {
   color: black;
@@ -212,7 +277,6 @@ h, h1, h2, h3, h4, h5, h6, p {
   width: 100%;
 }
 .home .article {
-  max-width: 570px;
   margin-bottom: 105px;
 }
 .home .item {
@@ -227,8 +291,59 @@ h, h1, h2, h3, h4, h5, h6, p {
 
 .services {
   margin-top: 96px;
-  background-color: red;
-  height: 100px;
+  padding-bottom: 64px;
+}
+.services .drop-down {
+  max-width: 800px;
+}
+.services .services-list {
+  margin-top: 78px;
+  list-style-type: none;
+}
+.services .services-list li {
+  margin-bottom: 16px;
+}
+
+.reviews .fa-angle-up, .reviews .fa-angle-down {
+  font-size: 32px;
+}
+.reviews .container {
+  padding: 32px 0;
+}
+.reviews .article {
+  align-items: flex-start;
+  text-align: left;
+}
+.reviews .article * {
+  color: white;
+}
+.reviews .article__p {
+  font-weight: 600;
+}
+.reviews .btn--default {
+  margin-top: 60px;
+  color: white;
+  background-color: #061e37;
+}
+.reviews .btn--default:focus, .reviews .btn--default:active {
+  background-color: white;
+  color: black;
+}
+.reviews .review {
+  max-width: 760px;
+  margin: 32px;
+}
+.reviews .reviews-list {
+  list-style-type: none;
+}
+.reviews .reviews-list .article__p {
+  color: #b0bec5;
+}
+.reviews .reviews-list .btn, .reviews .reviews-list .btn--sign-up, .reviews .reviews-list .btn--default, .reviews .reviews-list .btn--drop-down {
+  background-color: transparent;
+}
+.reviews .reviews-list .btn:hover, .reviews .reviews-list .btn--sign-up:hover, .reviews .reviews-list .btn--default:hover, .reviews .reviews-list .btn--drop-down:hover {
+  cursor: grab;
 }
 
 /*# sourceMappingURL=style.css.map */
