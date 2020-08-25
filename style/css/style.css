@@ -1,0 +1,176 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700;800&display=swap");
+body {
+  margin: 0;
+  font-family: "Raleway";
+  font-size: 15px;
+}
+
+h, h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+}
+
+.link {
+  text-decoration: none;
+  color: black;
+  font-weight: 600;
+}
+
+.column, .column--jcc {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.column--jcc {
+  justify-content: center;
+}
+
+.row, .row--jcsb, .row--jcc {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+}
+.row--jcc {
+  justify-content: center;
+}
+.row--jcsb {
+  justify-content: space-between;
+}
+
+.section {
+  position: relative;
+  width: 100%;
+}
+
+.section__bg {
+  z-index: -1;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(90deg, #26a78b, #168d96);
+}
+
+.container {
+  margin: auto;
+  width: 100%;
+  max-width: 1440px;
+}
+
+.wrapper {
+  width: 100%;
+}
+
+.logo {
+  max-width: 188px;
+}
+
+.logo__icon {
+  margin-right: 8px;
+}
+
+.logo__text {
+  text-align: left;
+  text-transform: uppercase;
+}
+
+.nav__links {
+  max-width: 440px;
+}
+
+.btn, .btn--default, .btn--sign-up {
+  border-radius: 5px;
+  font-size: 15px;
+  border: none;
+  font-family: "Raleway", sans-serif;
+  text-transform: uppercase;
+  color: white;
+}
+.btn--sign-up {
+  text-transform: none;
+  border: solid white 1px;
+  background-color: transparent;
+}
+.btn--default {
+  width: 160px;
+  height: 60px;
+  background-color: #1de9b6;
+}
+.btn--sign-up:focus, .btn--default:focus {
+  outline: none;
+}
+
+.article {
+  text-align: center;
+}
+
+.article__h {
+  font-size: 45px;
+  font-weight: 600;
+}
+
+.article__sub-h {
+  margin-top: 16px;
+  font-size: 25px;
+  font-weight: 600;
+  color: #b0bec5;
+}
+
+.article__p {
+  margin-top: 24px;
+  color: #b0bec5;
+}
+
+.header * {
+  color: white;
+}
+.header .container {
+  padding: 32px 0 190px 0;
+}
+.header .content {
+  align-items: flex-end;
+  margin-top: 64px;
+}
+.header .link:hover {
+  color: black;
+}
+.header .article {
+  align-items: flex-start;
+  max-width: 586px;
+}
+.header .article__h {
+  font-size: 55px;
+  font-weight: 800;
+}
+.header .article_p {
+  margin-top: 30px;
+  font-size: 18px;
+}
+.header .buttons-list {
+  margin-top: 64px;
+  max-width: 342px;
+}
+.header .btn--default {
+  color: black;
+  background-color: white;
+}
+.header .btn--default:active, .header .btn--default:focus {
+  color: white;
+  background-color: #061e37;
+}
+.header .video {
+  width: 512px;
+  height: 256px;
+  background-color: red;
+}
+
+.home .container {
+  padding: 64px 0;
+}
+.home .wrapper {
+  width: 100%;
+}
+.home .article {
+  max-width: 570px;
+}
+
+/*# sourceMappingURL=style.css.map */

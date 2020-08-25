@@ -1,0 +1,26 @@
+.btn {
+    border-radius: 5px;
+    font-size: 15px;
+    border: none;
+    font-family: 'Raleway', sans-serif;
+    text-transform: uppercase;
+    color: white;
+
+    &--sign-up {
+        @extend .btn;
+        text-transform: none;
+        border: solid white 1px;
+        background-color: transparent;
+    }
+    
+    &--default {
+        @extend .btn;
+        width: 160px;
+        height: 60px;
+        background-color: $btn-bg-color;
+    }
+
+    &--sign-up:focus, &--default:focus {
+        outline: none;
+    }
+}
