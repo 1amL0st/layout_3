@@ -1,6 +1,6 @@
 .home {
     .container {
-        padding: 64px 0;
+        padding-top: 64px;
     }
 
     .wrapper {
@@ -9,5 +9,18 @@
 
     .article {
         max-width: 570px;
+        margin-bottom: 105px;
+    }
+
+    .item {
+        max-width: 350px;
+    }
+
+    .btn--default:focus, .btn--default:active {
+        background-color: red;
+    }
+    
+    .btn--default {
+        margin: 86px 0;
     }
 }
