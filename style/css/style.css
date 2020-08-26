@@ -51,6 +51,7 @@ h, h1, h2, h3, h4, h5, h6, p {
 }
 
 .container {
+  box-sizing: border-box;
   margin: auto;
   width: 100%;
   max-width: 1440px;
@@ -60,6 +61,14 @@ h, h1, h2, h3, h4, h5, h6, p {
   width: 100%;
 }
 
+@keyframes animation-fade {
+  from {
+    filter: opacity(1);
+  }
+  to {
+    filter: opacity(0);
+  }
+}
 @font-face {
   font-family: "Myriad Pro";
   font-style: normal;
@@ -130,12 +139,12 @@ h, h1, h2, h3, h4, h5, h6, p {
   margin-top: 16px;
   font-size: 25px;
   font-weight: 600;
-  color: #b0bec5;
+  color: #7e878b;
 }
 
 .article__p {
   margin-top: 24px;
-  color: #b0bec5;
+  color: #7e878b;
 }
 
 .item__name {
@@ -148,7 +157,7 @@ h, h1, h2, h3, h4, h5, h6, p {
   text-align: center;
   margin-top: 16px;
   font-family: "Myriad Pro", sans-serif;
-  color: #b0bec5;
+  color: #7e878b;
 }
 
 .stat {
@@ -175,8 +184,8 @@ h, h1, h2, h3, h4, h5, h6, p {
 }
 
 .drop-down {
-  border-bottom: solid 2px black;
-  border-right: solid 2px black;
+  border-radius: 5px;
+  box-shadow: 2px 2px 5px #424242;
 }
 
 .drop-down__header {
@@ -184,6 +193,7 @@ h, h1, h2, h3, h4, h5, h6, p {
 }
 
 .drop-down__icon {
+  margin-left: 8px;
   margin-right: 16px;
 }
 
@@ -207,8 +217,10 @@ h, h1, h2, h3, h4, h5, h6, p {
 
 .review .review__text {
   align-items: flex-start;
-  padding: 16px 16px;
+  padding: 20px 32px;
   background-color: white;
+  border-radius: 5px;
+  box-shadow: 2px 2px 5px #424242;
 }
 .review .review__h {
   font-size: 18px;
@@ -221,6 +233,52 @@ h, h1, h2, h3, h4, h5, h6, p {
   color: #78909c;
   margin-top: 16px;
   font-weight: normal;
+}
+.review--animation {
+  animation-name: animation-fade;
+  animation-duration: 500ms;
+}
+
+.member {
+  text-align: center;
+}
+.member--hidden {
+  max-width: 0px;
+  max-height: 0px;
+  visibility: hidden;
+}
+
+.member__name {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 48px auto 16px auto;
+}
+
+.member__desc {
+  color: #78909c;
+}
+
+.member__av:hover, .member__av--faded:hover, .member__av--hidden:hover {
+  cursor: grab;
+}
+.member__av--hidden {
+  visibility: hidden;
+  max-width: 0px;
+  max-height: 0px;
+}
+.member__av--faded {
+  max-width: 128px;
+  max-height: 128px;
+  filter: opacity(0.5);
+}
+
+.member__socials {
+  margin-top: 24px;
+  font-size: 20px;
+  max-width: 128px;
+}
+.member__socials .fa {
+  color: #78909c;
 }
 
 .header * {
@@ -336,14 +394,31 @@ h, h1, h2, h3, h4, h5, h6, p {
 .reviews .reviews-list {
   list-style-type: none;
 }
+.reviews .reviews-list .view {
+  overflow: hidden;
+  max-height: 390px;
+}
 .reviews .reviews-list .article__p {
-  color: #b0bec5;
+  color: #7e878b;
 }
 .reviews .reviews-list .btn, .reviews .reviews-list .btn--sign-up, .reviews .reviews-list .btn--default, .reviews .reviews-list .btn--drop-down {
   background-color: transparent;
 }
 .reviews .reviews-list .btn:hover, .reviews .reviews-list .btn--sign-up:hover, .reviews .reviews-list .btn--default:hover, .reviews .reviews-list .btn--drop-down:hover {
   cursor: grab;
+}
+
+.team .container {
+  padding: 100px;
+}
+.team .members-list {
+  margin-top: 64px;
+}
+.team .member {
+  max-width: 600px;
+}
+.team .members__avatars {
+  max-width: 620px;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,8 +1,10 @@
 .review {
     .review__text {
         align-items: flex-start;
-        padding: 16px 16px;
+        padding: 20px 32px;
         background-color: white;
+        border-radius: $border-radius;
+        box-shadow: 2px 2px 5px rgb(66, 66, 66);
     }
 
     .review__h {
@@ -18,5 +20,10 @@
         color: #78909c;
         margin-top: 16px;
         font-weight: normal;
+    }
+
+    &--animation {
+        animation-name: animation-fade;
+        animation-duration: 500ms;
     }
 }

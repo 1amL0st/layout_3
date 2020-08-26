@@ -1,6 +1,6 @@
 .drop-down {
-    border-bottom: solid 2px black;
-    border-right: solid 2px black;
+    border-radius: $border-radius;
+    box-shadow: 2px 2px 5px rgb(66, 66, 66);
 }
 
 .drop-down__header {
@@ -8,6 +8,7 @@
 }
 
 .drop-down__icon {
+    margin-left: 8px;
     margin-right: 16px;
 }
 

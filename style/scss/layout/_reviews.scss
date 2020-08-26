@@ -39,7 +39,13 @@
 
     .reviews-list 
     {
+        .view {
+            overflow: hidden;
+            max-height: 390px;
+        }
+
         list-style-type: none;
+
         .article__p {
             color: $article-p-color;
         }

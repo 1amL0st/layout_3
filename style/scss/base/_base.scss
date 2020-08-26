@@ -57,6 +57,7 @@ h, h1, h2, h3, h4, h5, h6, p {
 }
 
 .container {
+    box-sizing: border-box;
     margin: auto;
     width: 100%;
     max-width: 1440px;
@@ -64,4 +65,13 @@ h, h1, h2, h3, h4, h5, h6, p {
 
 .wrapper {
     width: 100%;
+}
+
+@keyframes animation-fade {
+    from {
+        filter: opacity(1.0);
+    }
+    to {
+        filter: opacity(0.0);
+    }
 }
