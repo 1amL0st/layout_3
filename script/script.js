@@ -65,8 +65,8 @@ function MemberList()
     }
 
     members_avatars.children[1].classList.remove('member__av--faded');
-    members[1].classList.remove('member--hidden');
     members[1].classList.add('member');
+    members[1].classList.remove('member--hidden');
 
     let img = document.createElement('img');
 }
