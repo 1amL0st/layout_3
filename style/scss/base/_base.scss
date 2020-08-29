@@ -1,0 +1,77 @@
+body {
+    margin: 0;
+
+    font-family: 'Raleway';
+    font-size: 15px;
+}
+
+h, h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+}
+
+.link {
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &--jcc {
+        @extend .column;
+        justify-content: center;
+    }
+}
+
+.row {
+    display: flex;
+    flex-direction: row;;
+    align-items: center;
+    width: 100%;
+
+    &--jcc {
+        @extend .row;
+        justify-content: center;
+    }
+
+    &--jcsb {
+        @extend .row;
+        justify-content: space-between;
+    }
+}
+
+.section {
+    position: relative;
+    width: 100%;
+}
+
+.section__bg {
+    z-index: -1;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(90deg, $sec-bg-grad-left, $sec-bg-grad-right);
+}
+
+.container {
+    box-sizing: border-box;
+    margin: auto;
+    width: 100%;
+    max-width: 1440px;
+}
+
+.wrapper {
+    width: 100%;
+}
+
+@keyframes animation-fade {
+    from {
+        filter: opacity(1.0);
+    }
+    to {
+        filter: opacity(0.0);
+    }
+}

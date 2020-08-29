@@ -1,0 +1,25 @@
+.contacts-form {
+
+    input, textarea {
+        font-size: 14px;
+        font-family: 'Raleway', sans-serif;
+        padding: 1em 1em;
+        border-radius: 5px;
+    }
+
+    [type="text"] {
+        box-sizing: border-box;
+        max-width: 280px;
+        width: 100%;
+
+        margin-bottom: 32px;
+    }
+
+    textarea {
+        width: 100%;
+    }
+
+    .contacts-form__down {
+        margin-top: 32px;
+    }
+}

@@ -1,0 +1,41 @@
+.btn {
+    border-radius: $border-radius;
+    font-size: 15px;
+    border: none;
+    font-family: 'Raleway', sans-serif;
+    text-transform: uppercase;
+    color: white;
+
+    &--sign-up {
+        @extend .btn;
+        text-transform: none;
+        border: solid white 1px;
+        background-color: transparent;
+    }
+    
+    &--default {
+        @extend .btn;
+        width: 160px;
+        height: 60px;
+        background-color: $btn-bg-color;
+    }
+
+    &--drop-down {
+        @extend .btn;
+        background-image: url('../../assets/images/drop_down_btn_icon.png');
+        transform: rotate(180deg);
+        background-repeat: no-repeat;
+        background-position: center;
+        width: 32px;
+        height: 32px;
+        background-color: transparent;
+    }
+
+    &--drop-down:hover {
+        cursor: grab;
+    }
+
+    &:focus, &--sign-up:focus, &--default:focus, &--drop-down:focus {
+        outline: none;
+    }
+}

@@ -1,0 +1,53 @@
+.header {
+    * {
+        color: white;
+    }
+
+    .container {
+        padding: 32px 0 190px 0;
+    }
+
+    .nav {
+        align-items: flex-end;
+    }
+
+    .content {
+        align-items: flex-end;
+        margin-top: 173px;
+    }
+
+    .link:hover {
+        color: black;
+    }
+
+    .article {
+        text-align: left;
+        align-items: flex-start;
+        max-width: 586px;
+    }
+
+    .article__h {
+        font-size: 55px;
+        font-weight: 800;
+    }
+
+    .article_p {
+        margin-top: 30px;
+        font-size: 18px;
+    }
+
+    .buttons-list {
+        margin-top: 64px;
+        max-width: 342px;
+    }
+
+    .btn--default {
+        color: black;
+        background-color: white;
+
+        &:active, &:focus {
+            color: white;
+            background-color: #061e37;
+        }
+    }
+}

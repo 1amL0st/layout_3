@@ -1,0 +1,42 @@
+.footer {
+    background-color: #061e37;
+
+    .footer__bottom {
+        margin-top: 32px;
+    }
+
+    .container {
+        padding: 110px;
+    }
+
+    .logo {
+        filter: brightness(100);
+        color: white;
+    }
+
+    .link {
+        color: white;
+    }
+
+    .member__socials {
+        margin-top: 0;
+        * { 
+            color: #7e878b;
+        }
+    }
+}
+
+.footer__about {
+    max-width: 320px;
+
+    .link {
+        color: #7e878b;
+    }
+}
+
+.footer__dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: white;
+}

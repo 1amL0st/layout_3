@@ -1,0 +1,25 @@
+.home {
+    .container {
+        padding-top: 64px;
+    }
+
+    .wrapper {
+        width: 100%;
+    }
+
+    .article {
+        margin-bottom: 105px;
+    }
+
+    .item {
+        max-width: 350px;
+    }
+
+    .btn--default:focus, .btn--default:active {
+        background-color: red;
+    }
+    
+    .btn--default {
+        margin: 86px 0;
+    }
+}

@@ -1,0 +1,49 @@
+.member {
+    text-align: center;
+
+    &--hidden {
+        max-width: 0px;
+        max-height: 0px;
+        visibility: hidden;
+    }
+}
+
+.member__name {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 48px auto 16px auto;
+}
+
+.member__desc {
+    color: #78909c;
+}
+
+.member__av {
+    &:hover {
+        cursor: grab;
+    }
+
+    &--hidden {
+        @extend .member__av;
+        visibility: hidden;
+        max-width: 0px;
+        max-height: 0px;
+    }
+
+    &--faded {
+        @extend .member__av;
+        max-width: 128px;
+        max-height: 128px;
+        filter: opacity(0.5);
+    }
+}
+
+.member__socials {
+    margin-top: 24px;
+    font-size: 20px;
+    max-width: 128px;
+    
+    .fa {
+        color: #78909c;
+    }
+}

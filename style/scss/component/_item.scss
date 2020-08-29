@@ -1,0 +1,16 @@
+.item {
+
+}
+
+.item__name {
+    font-weight: 600;
+    font-size: 20px;
+    margin-top: 16px;
+}
+
+.item__desc {
+    text-align: center;
+    margin-top: 16px;
+    font-family: 'Myriad Pro', sans-serif;
+    color: $item-desc-color;
+}

@@ -1,0 +1,22 @@
+.team {
+    .container {
+        padding: 100px;
+    }
+
+    .members-list {
+        width: 100%;
+
+        margin-top: 64px;
+    }
+
+    .member {
+        max-width: 600px;
+    }
+
+    .members__avatars {
+
+        .member__av {
+            margin: 0 16px;
+        }
+    }
+}
