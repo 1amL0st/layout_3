@@ -54,21 +54,48 @@ function MemberList()
     let member_list = document.getElementById('section-team').getElementsByClassName('members-list')[0];
     let members_avatars = member_list.getElementsByClassName('members__avatars')[0];
     let members = member_list.getElementsByClassName('member--hidden');
+
+    function HideVisible()
+    {
+        let visible_av = members_avatars.getElementsByClassName('member__av')[0];
+        if (visible_av != undefined) {
+            visible_av.classList.remove('member__av');
+            visible_av.classList.add('member__av--faded');
+        }
+        let visible_member = member_list.getElementsByClassName('member')[0];
+        if (visible_member != undefined) {
+            visible_member.classList.remove('member');
+            visible_member.classList.add('member--hidden');
+        }
+    }
+
     for (let i = 0; i < members.length; ++i) {
+        let img = document.createElement('img');
+        img.addEventListener('click', e => {
+            HideVisible();
+            let av_path = e.srcElement.src;
+            let member = undefined;
+            for (let i = 0; i < members.length; ++i) {
+                if (members[i].children[0].src == av_path) {
+                    member = members[i];
+                    break;
+                }
+            }
+
+            member.classList.remove('member--hidden');
+            member.classList.add('member');
+
+            let icon = e.srcElement;
+            icon.classList.remove('member__av--faded');
+            icon.classList.add('member__av');
+        });
+
         let member_av = members[i].getElementsByClassName('member__av--hidden')[0];
         member_av.classList.add('member__av');
-
-        let img = document.createElement('img');
         img.src = member_av.src;
         img.classList.add('member__av--faded');
         members_avatars.appendChild(img);
     }
-
-    members_avatars.children[1].classList.remove('member__av--faded');
-    members[1].classList.add('member');
-    members[1].classList.remove('member--hidden');
-
-    let img = document.createElement('img');
 }
 
 function OnLoadFunction()

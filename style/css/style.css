@@ -342,11 +342,6 @@ h, h1, h2, h3, h4, h5, h6, p {
   color: white;
   background-color: #061e37;
 }
-.header .video {
-  width: 512px;
-  height: 256px;
-  background-color: red;
-}
 
 .home .container {
   padding-top: 64px;
@@ -432,13 +427,14 @@ h, h1, h2, h3, h4, h5, h6, p {
   padding: 100px;
 }
 .team .members-list {
+  width: 100%;
   margin-top: 64px;
 }
 .team .member {
   max-width: 600px;
 }
-.team .members__avatars {
-  max-width: 620px;
+.team .members__avatars .member__av, .team .members__avatars .member__av--hidden, .team .members__avatars .member__av--faded {
+  margin: 0 16px;
 }
 
 .contacts .container {

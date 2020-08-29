@@ -4,6 +4,8 @@
     }
 
     .members-list {
+        width: 100%;
+
         margin-top: 64px;
     }
 
@@ -12,6 +14,9 @@
     }
 
     .members__avatars {
-        max-width: 620px;
+
+        .member__av {
+            margin: 0 16px;
+        }
     }
 }
